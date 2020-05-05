@@ -1,5 +1,6 @@
 module PdfjsViewer
   class ViewerController < PdfApplicationController
+    skip_authorization_check
     layout false
 
     after_action :allow_embedding_in_iframe
